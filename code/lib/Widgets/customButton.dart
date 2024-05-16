@@ -5,6 +5,7 @@ class customButton extends StatelessWidget {
   final double height;
   final double width;
   final Color? color;
+  final Color? textcolor;
   final double borderradius;
   final void Function()? onPressed;
 
@@ -16,6 +17,7 @@ class customButton extends StatelessWidget {
     required this.width,
     this.color,
     required this.borderradius,
+    this.textcolor,
   });
 
   @override
@@ -32,7 +34,10 @@ class customButton extends StatelessWidget {
               ),
             )),
         onPressed: onPressed,
-        child: Text(text),
+        child: Text(
+          text,
+          style: TextStyle(color: textcolor),
+        ),
       ),
     );
   }
