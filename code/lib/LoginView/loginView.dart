@@ -1,3 +1,4 @@
+import 'package:code/HomeView/homeView.dart';
 import 'package:flutter/material.dart';
 
 class loginView extends StatelessWidget {
@@ -6,15 +7,21 @@ class loginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-          child: Center(
+      body: Center(
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => homeView(),
+              ),
+            );
+          },
           child: Text(
             "LogIn Button",
           ),
         ),
-      )),
+      ),
     );
   }
 }
