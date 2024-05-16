@@ -13,6 +13,8 @@ class loginView extends StatelessWidget {
           height: 60,
           width: double.infinity,
           text: "Login",
+          color: Colors.cyanAccent,
+          borderradius: 25,
           onPressed: () {
             Navigator.push(
                 context,

@@ -13,9 +13,11 @@ class homeView extends StatelessWidget {
       body: SafeArea(
           child: Center(
               child: customButton(
+        color: Colors.accents[10],
         text: "Home Button",
         height: 70,
         width: 200,
+        borderradius: 10,
         onPressed: () {
           Navigator.pop(context);
         },
